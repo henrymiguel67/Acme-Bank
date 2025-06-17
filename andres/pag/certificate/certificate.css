@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f7;
+    padding: 20px;
+  }
+  
+  .certificate-container {
+    background: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  #certificate {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed #999;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+  

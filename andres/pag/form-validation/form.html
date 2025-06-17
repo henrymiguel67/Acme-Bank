@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validaciones - Acme Bank</title>
+  <script src="validations.js" defer></script>
+</head>
+<body>
+  <form id="validateForm">
+    <input type="email" id="email" placeholder="Correo" />
+    <input type="tel" id="phone" placeholder="Teléfono" />
+    <button type="submit">Validar</button>
+  </form>
+
+  <script>
+    document.getElementById("validateForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+
+      if (!validateEmail(email)) {
+        alert("Correo inválido");
+        return;
+      }
+
+      if (!validatePhone(phone)) {
+        alert("Teléfono inválido");
+        return;
+      }
+
+      alert("Datos válidos");
+    });
+  </script>
+</body>
+</html>

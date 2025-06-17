@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagar Servicios - Acme Bank</title>
+  <link rel="stylesheet" href="public.css">
+</head>
+<body>
+  <h1>Pagar Servicios Públicos</h1>
+
+  <form id="publicForm">
+    <label for="serviceName">Nombre del Servicio</label>
+    <input type="text" id="serviceName" placeholder="Ej: Electricidad" required />
+
+    <label for="serviceRef">Referencia del Pago</label>
+    <input type="text" id="serviceRef" placeholder="Ej: 123456789" required />
+
+    <label for="serviceAmount">Monto a pagar</label>
+    <input type="number" id="serviceAmount" placeholder="Monto en $ USD" required />
+
+    <button type="submit">Pagar</button>
+  </form>
+
+  <div id="paymentResult"></div>
+
+  <script src="public.js"></script>
+</body>
+</html>
