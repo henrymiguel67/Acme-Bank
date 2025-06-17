@@ -1,0 +1,24 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Acme Bank</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <form id="loginForm">
+    <h2>Iniciar Sesión</h2>
+    <select id="idType" required>
+      <option value="">Tipo de Identificación</option>
+      <option value="CC">Cédula</option>
+      <option value="TI">Tarjeta de Identidad</option>
+    </select>
+    <input type="text" id="idNumber" placeholder="Número de Identificación" required />
+    <input type="password" id="password" placeholder="Contraseña" required />
+    <button type="submit">Ingresar</button>
+    <p id="errorMsg"></p>
+    <a href="/andres/pag/register/register.html">Crear cuenta</a>
+    <a href="/andres/pag/password/password.html">Recordar contraseña</a>
+  </form>
+  <script src="login.js"></script>
+</body>
+</html>
