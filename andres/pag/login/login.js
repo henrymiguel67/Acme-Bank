@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   
     // Simulación de validación
     if (idType === "CC" && idNumber === "123" && password === "admin") {
-      window.location.href = "dashboard.html";
+      window.location.href = "andres/pag/dashboard/dasboard.html";
     } else {
       document.getElementById("errorMsg").textContent = "No se pudo validar su identidad";
     }
